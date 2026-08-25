@@ -43,7 +43,7 @@ const CONTENT = {
         />
         <p>Hello, I'm Nathaniel Lejano. I made this simple portfolio to introduce myself.</p>
         <p><br /> I am 22 years old, and I am currently residing in Lian, Batangas.</p>
-        <p><br />I am a fresh graduate from Batangas State University - The National Engineering University (Alangilan Campus) as a Bachelor of Science in Computer Science.</p>
+        <p><br />I am a fresh graduate from Batangas State University - The National Engineering University (Alangilan Campus) with a degree in BS Computer Science.</p>
         <p><br />I have a strong passion for software development, and I am eager to learn more and upskill in professional settings in order to grow as a professional.</p>
         <p><br />If you want to know more about me, click around the icons on the left to see my experience, education, projects, and more.</p>
       </>
@@ -71,13 +71,13 @@ const CONTENT = {
         <div style={rowStyle}>
           <strong>BS Computer Science</strong>
           <div style={mutedStyle}>Batangas State University - Alangilan Campus — 2026</div>
-          <p>• Cum Laude</p>
-          <p>• Dean's Lister</p>
+          <p>• Graduated <i>cum laude</i></p>
+          <p>• Dean's Lister (7 Semesters)</p>
         </div>
         <div style={rowStyle}>
           <strong>STEM</strong>
           <div style={mutedStyle}>Batangas State University - ARASOF — 2022</div>
-          <p>• With Honors</p>
+          <p>• Graduated With Honors</p>
         </div>
       </>
     ),
@@ -88,20 +88,11 @@ const CONTENT = {
       <>
         <div style={rowStyle}>
           <strong>DebTabbed</strong>
-          <p>A web-based system for managing expenses in multiple households.</p>
+          <p>•	A web-based system for managing, splitting, and tracking shared bills and expenses in multiple households.</p>
+          <p>•	Users can log payments, split costs, and see who owes whom among all members of a household. </p>
+          <p>•	Makes shared expense management simpler and more transparent.</p>
           <a
-          href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
-            rel="noopener noreferrer"
-            target="_blank"
-            style={linkStyle}>
-            GitHub Link
-          </a>
-        </div>
-        <div style={rowStyle}>
-          <strong>Kaisigns</strong>
-          <p>Short description of the project, your role, and the stack used.</p>
-          <a
-          href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
+          href= "https://github.com/Nathnath95/Debtabbed"
             rel="noopener noreferrer"
             target="_blank"
             style={linkStyle}>
@@ -110,9 +101,11 @@ const CONTENT = {
         </div>
         <div style={rowStyle}>
           <strong>Gestura</strong>
-          <p>A prototype for a system that aids users in learning and interpreting sign language. It utilizes the camera to detect valid hand gestures which are then translated to the corresponding sign language alphabet. </p>
+          <p>•	A real-time hand gesture system that aids users in learning and interpreting sign language.</p>
+          <p>•	Trained a model to detect valid hand signs and translate them into corresponding alphabet letters.</p>
+          <p>•	Designed the interface to give interactive feedback for practicing sign language.</p>
           <a
-          href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
+          href= "https://github.com/VinceAbella/Gestura"
             rel="noopener noreferrer"
             target="_blank"
             style={linkStyle}>
@@ -121,9 +114,13 @@ const CONTENT = {
         </div>
         <div style={rowStyle}>
           <strong>Scripter</strong>
-          <p>A mobile application that recognizes speech and transcribes it as audio to text, in which the transcribed content can then be modified manually or automatically with the help of Gemini AI. Furthermore, it also features user authentication, Bluetooth connectivity, file transfer, and file management.</p>
+          <p>•	A mobile application that recognizes speech and performs transcription.</p>
+          <p>•	Transcribed audios can be saved and edited for revision of information.</p>
+          <p>•	Integrated a generative AI API to further expand information of transcriptions.</p>
+          <p>•	Simplifies taking notes during lectures or meetings.</p>
+          <p>•	Helps individuals with hearing impairments transcribe spoken conversations for better engagement.</p>
           <a
-          href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
+          href= "https://github.com/Nathnath95/Scripter.git"
             rel="noopener noreferrer"
             target="_blank"
             style={linkStyle}>
@@ -373,8 +370,8 @@ export default function Portfolio() {
                       zIndex: 50,
                     }
                   : {
-                      width: "800px",
-                      height: "680px",
+                      width: "1000px",
+                      height: "500px",
                       background: "#ece9d8",
                       border: "2px solid #0a0a0a",
                       boxShadow: "4px 4px 0 rgba(0,0,0,0.35)",
