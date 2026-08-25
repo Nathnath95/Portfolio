@@ -24,6 +24,11 @@ const mutedStyle = {
   marginBottom: "4px",
 };
 
+const linkStyle = {
+  color: "#1c5fc9",
+  textDecoration: "underline",
+};
+
 const CONTENT = {
   profile: {
     title: "My Profile",
@@ -84,18 +89,46 @@ const CONTENT = {
         <div style={rowStyle}>
           <strong>DebTabbed</strong>
           <p>A web-based system for managing expenses in multiple households.</p>
+          <a
+          href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            style={linkStyle}>
+            GitHub Link
+          </a>
         </div>
         <div style={rowStyle}>
           <strong>Kaisigns</strong>
           <p>Short description of the project, your role, and the stack used.</p>
+          <a
+          href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            style={linkStyle}>
+            GitHub Link
+          </a>
         </div>
         <div style={rowStyle}>
           <strong>Gestura</strong>
           <p>A prototype for a system that aids users in learning and interpreting sign language. It utilizes the camera to detect valid hand gestures which are then translated to the corresponding sign language alphabet. </p>
+          <a
+          href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            style={linkStyle}>
+            GitHub Link
+          </a>
         </div>
         <div style={rowStyle}>
           <strong>Scripter</strong>
           <p>A mobile application that recognizes speech and transcribes it as audio to text, in which the transcribed content can then be modified manually or automatically with the help of Gemini AI. Furthermore, it also features user authentication, Bluetooth connectivity, file transfer, and file management.</p>
+          <a
+          href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            style={linkStyle}>
+            GitHub Link
+          </a>
         </div>
       </>
     ),
@@ -131,7 +164,11 @@ const CONTENT = {
         <div style={rowStyle}>
           <strong>Email</strong>
           <div style={mutedStyle}>
-            <a href= "mailto:nathaniellejano953@gmail.com" style={linkStyle}>
+            <a
+            href= "https://mail.google.com/mail/?view=cm&fs=1&to=nathaniellejano953@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              style={linkStyle}>
               nathaniellejano953@gmail.com
             </a>
           </div>
@@ -139,7 +176,8 @@ const CONTENT = {
         <div style={rowStyle}>
           <strong>LinkedIn</strong>
           <div style={mutedStyle}>
-            <a href="https://linkedin.com/in/nathaniel-lejano-a5a91a286"
+            <a
+            href="https://linkedin.com/in/nathaniel-lejano-a5a91a286"
             style={linkStyle}
             target="_blank"
             rel="noopener noreferrer">
@@ -150,7 +188,8 @@ const CONTENT = {
         <div style={rowStyle}>
           <strong>GitHub</strong>
           <div style={mutedStyle}>
-            <a href="https://github.com/nathnath95"
+            <a
+            href="https://github.com/nathnath95"
             style={linkStyle}
             target="_blank"
             rel="noopener noreferrer">
