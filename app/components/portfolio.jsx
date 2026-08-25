@@ -130,15 +130,33 @@ const CONTENT = {
         <p>You can reach me through any of these:</p>
         <div style={rowStyle}>
           <strong>Email</strong>
-          <div style={mutedStyle}>nathaniellejano953@gmail.com</div>
+          <div style={mutedStyle}>
+            <a href= "mailto:nathaniellejano953@gmail.com" style={linkStyle}>
+              nathaniellejano953@gmail.com
+            </a>
+          </div>
         </div>
         <div style={rowStyle}>
           <strong>LinkedIn</strong>
-          <div style={mutedStyle}>linkedin.com/in/nathaniel-lejano-a5a91a286</div>
+          <div style={mutedStyle}>
+            <a href="https://linkedin.com/in/nathaniel-lejano-a5a91a286"
+            style={linkStyle}
+            target="_blank"
+            rel="noopener noreferrer">
+              linkedin.com/in/nathaniel-lejano-a5a91a286
+            </a>
+          </div>
         </div>
         <div style={rowStyle}>
           <strong>GitHub</strong>
-          <div style={mutedStyle}>github.com/nathnath95</div>
+          <div style={mutedStyle}>
+            <a href="https://github.com/nathnath95"
+            style={linkStyle}
+            target="_blank"
+            rel="noopener noreferrer">
+              github.com/nathnath95
+            </a>
+          </div>
         </div>
       </>
     ),
