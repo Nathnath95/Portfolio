@@ -302,7 +302,7 @@ const CSS = `
   outline: 2px solid ${GOLD_BRIGHT}; outline-offset: -2px;
 }
 
-.er-bg-wrap { animation: er-bg-in 2.5s ease-out both; }
+.er-bg-wrap { animation: er-bg-in 3.5s ease-out both; }
 @keyframes er-bg-in { from { opacity: 0; } to { opacity: 1; } }
 
 .er-bg-layer {
@@ -418,10 +418,8 @@ export default function Portfolio() {
     >
       <style>{CSS}</style>
 
-      <div aria-hidden="true" className="er-bg-wrap" style={{ position: "absolute", inset: 0, zIndex: 0 }}></div>
-
       {/* Background art*/}
-      <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+      <div aria-hidden="true" className="er-bg-wrap" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
         {Object.entries(BACKGROUNDS).map(([key, src]) => (
           <div
             key={key}
