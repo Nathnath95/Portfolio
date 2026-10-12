@@ -297,7 +297,13 @@ const CSS = `
   color: #f2d98a; border-left-color: ${GOLD};
   background: linear-gradient(90deg, rgba(201,164,76,0.22), transparent);
 }
-.er-menu-btn:focus-visible { outline: 2px solid ${GOLD_BRIGHT}; outline-offset: -2px; }
+  
+.er-menu-btn:focus-visible {
+  outline: 2px solid ${GOLD_BRIGHT}; outline-offset: -2px;
+}
+
+.er-bg-wrap { animation: er-bg-in 2.5s ease-out both; }
+@keyframes er-bg-in { from { opacity: 0; } to { opacity: 1; } }
 
 .er-bg-layer {
   position: absolute; inset: 0;
@@ -353,6 +359,7 @@ const CSS = `
 @media (prefers-reduced-motion: reduce) {
   .er-title, .er-panel, .er-rule { animation: none; }
   .er-bg-layer { transition: none; }
+  .er-bg-wrap { animation: none; }
 }
 `;
 
@@ -411,7 +418,9 @@ export default function Portfolio() {
     >
       <style>{CSS}</style>
 
-      {/* Background art: all layers stay mounted so they preload and crossfade */}
+      <div aria-hidden="true" className="er-bg-wrap" style={{ position: "absolute", inset: 0, zIndex: 0 }}></div>
+
+      {/* Background art*/}
       <div aria-hidden="true" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
         {Object.entries(BACKGROUNDS).map(([key, src]) => (
           <div
