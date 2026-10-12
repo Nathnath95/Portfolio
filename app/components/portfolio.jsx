@@ -8,6 +8,7 @@ const ICONS = [
   { key: "experience", label: "Experience", glyph: "💼" },
   { key: "education", label: "Education", glyph: "🎓" },
   { key: "projects", label: "Projects", glyph: "📁" },
+  { key: "skills", label: "Skills", glyph: "🛠️" },
   { key: "certificates", label: "Certificates", glyph: "📜" },
   { key: "contact", label: "Contact", glyph: "✉️" },
 ];
@@ -35,16 +36,16 @@ const CONTENT = {
     body: (
       <>
         <Image 
-          src="/1x1.png"
+          src="/id.png"
           alt="Nathaniel Lejano"
           width={200}
           height={200}
           style={{ border: "2px solid #000000", marginBottom: "12px" }}
         />
-        <p>Hello, I'm Nathaniel Lejano. I made this simple portfolio to introduce myself.</p>
-        <p><br /> I am 22 years old, and I am currently residing in Lian, Batangas.</p>
-        <p><br />I am a fresh graduate from Batangas State University - The National Engineering University (Alangilan Campus) with a degree in BS Computer Science.</p>
-        <p><br />I have a strong passion for software development, and I am eager to learn more and upskill in professional settings in order to grow as a professional.</p>
+        <p>Hello! I'm Nathaniel Lejano, and I made this simple portfolio to introduce myself.</p>
+        <p><br />I am 22 years old, and currently residing in Lian, Batangas.</p>
+        <p><br />I am a Computer Science fresh graduate from Batangas State University - The National Engineering University (Alangilan Campus).</p>
+        <p><br />With knowledge in software development, computer systems, and basic device troubleshooting, along with my passion for problem solving, I am eager to apply these skills in technology-focused work environments.</p>
         <p><br />If you want to know more about me, click around the icons on the left to see my experience, education, projects, and more.</p>
       </>
     ),
@@ -54,12 +55,12 @@ const CONTENT = {
     body: (
       <>
         <div style={rowStyle}>
-          <strong>UI/UX Designer & Front-end Developer — Center for Artificial Intelligence and Smart Technologies (On-the-Job Training) </strong>
-          <div style={mutedStyle}>June 2025 – July 2025</div>
-          <p>• Designed and developed mockups and interactive prototypes for a web-based system using Figma.</p>
-          <p>• Translated approved designs into a functional front-end interface using Laravel and Livewire.</p>
-          <p>• Coordinated with back-end developers to discuss and implement interface functionalities.</p>
-          <p>• Created documentation for the front-end components and features of the system.</p>
+          <strong>UI/UX Designer & Front-end Developer — Center for AI and Smart Technologies (On-the-Job Training)</strong>
+          <div style={mutedStyle}>Batangas City | June 2025 – July 2025</div>
+          <p>• Designed mockups and interactive prototypes, then translated them into a functional web-based system.</p>
+          <p>• Identified and analyzed issues encountered during system development and determined appropriate solutions.</p>
+          <p>• Coordinated with back-end developers to implement and troubleshoot interface functionalities.</p>
+          <p>• Created technical documentation for the front-end components to support future development.</p>
         </div>
       </>
     ),
@@ -70,14 +71,13 @@ const CONTENT = {
       <>
         <div style={rowStyle}>
           <strong>BS Computer Science</strong>
-          <div style={mutedStyle}>Batangas State University - Alangilan Campus — 2026</div>
-          <p>• Graduated <i>cum laude</i></p>
-          <p>• Dean's Lister (7 Semesters)</p>
+          <div style={mutedStyle}>Batangas State University - Alangilan Campus, Batangas City | 2022 – 2026</div>
+          <p>• Honors & Awards: <strong>Cum Laude</strong> | <strong>Dean's Lister</strong> (7 Semesters)</p>
         </div>
         <div style={rowStyle}>
           <strong>STEM</strong>
-          <div style={mutedStyle}>Batangas State University - ARASOF — 2022</div>
-          <p>• Graduated With Honors</p>
+          <div style={mutedStyle}>Batangas State University - ARASOF | 2016 - 2022</div>
+          <p>• Honors & Awards: <strong> With High Honors</strong></p>
         </div>
       </>
     ),
@@ -87,7 +87,8 @@ const CONTENT = {
     body: (
       <>
         <div style={rowStyle}>
-          <strong>DebTabbed</strong>
+          <strong>DebTabbed (Laravel, Vue.js)</strong>
+          <div style={mutedStyle}>August 2026</div>
           <p>•	A web-based system for managing, splitting, and tracking shared bills and expenses in multiple households.</p>
           <p>•	Users can log payments, split costs, and see who owes whom among all members of a household. </p>
           <p>•	Makes shared expense management simpler and more transparent.</p>
@@ -100,7 +101,8 @@ const CONTENT = {
           </a>
         </div>
         <div style={rowStyle}>
-          <strong>Gestura</strong>
+          <strong>Gestura (Python, MediaPipe)</strong>
+          <div style={mutedStyle}>March 2025</div>
           <p>•	A real-time hand gesture system that aids users in learning and interpreting sign language.</p>
           <p>•	Trained a model to detect valid hand signs and translate them into corresponding alphabet letters.</p>
           <p>•	Designed the interface to give interactive feedback for practicing sign language.</p>
@@ -113,7 +115,8 @@ const CONTENT = {
           </a>
         </div>
         <div style={rowStyle}>
-          <strong>Scripter</strong>
+          <strong>Scripter (Java)</strong>
+          <div style={mutedStyle}>December 2024</div>
           <p>•	A mobile application that recognizes speech and performs transcription.</p>
           <p>•	Transcribed audios can be saved and edited for revision of information.</p>
           <p>•	Integrated a generative AI API to further expand information of transcriptions.</p>
@@ -130,25 +133,48 @@ const CONTENT = {
       </>
     ),
   },
+  skills: {
+    title: "Skills",
+    body: (
+      <>
+        <div style={rowStyle}>
+          <strong>Programming</strong>
+          <p>Web Development | Computer Vision/AI Development | Mobile App Development | Git Version Control</p>
+          <p><i>Languages & Frameworks:</i> PHP | Python | Java | Laravel | Livewire | Vue.js | OpenCV | MediaPipe | scikit-learn</p>
+        </div>
+        <div style={rowStyle}>
+          <strong>Tools</strong>
+          <p>Visual Studio Code | Android Studio | GitHub | Figma | Aseprite | FireAlpaca | Microsoft 365 | Orange Data Mining</p>
+        </div>
+        <div style={rowStyle}>
+          <strong>Computer Systems</strong>
+          <p>Basic Hardware/Software Diagnostics and Troubleshooting | Computer System Installation | Computer Maintenance | Peripheral Device Setup | Technical Documentation</p>
+        </div>
+        <div style={rowStyle}>
+          <strong>Soft Skills</strong>
+          <p>Problem Solving | Client Communication | Team Coordination | Willingness to Learn</p>
+        </div>
+      </>
+    ),
+  },
   certificates: {
     title: "Certificates",
     body: (
       <>
         <div style={rowStyle}>
-          <strong>Developing Designs for User Interface</strong>
-          <div style={mutedStyle}>TESDA — 2026</div>
+          <strong>TESDA Online Program (TOP) – Computer System Servicing</strong>
+          <div style={mutedStyle}>September 2026</div>
+          <p>Maintaining Computer Systems and Networks | Setting Up Computer Servers | Setting Up Computer Networks | Installing and Configuring Computer Systems | Introduction to Computer Systems Servicing</p>
         </div>
         <div style={rowStyle}>
-          <strong>Developing Designs for User Experience</strong>
-          <div style={mutedStyle}>TESDA — 2026</div>
+          <strong>TESDA Online Program (TOP) – Visual Graphic Design</strong>
+          <div style={mutedStyle}>July 2026</div>
+          <p>Developing Designs for User Interface | Developing Designs for User Experience</p>
         </div>
         <div style={rowStyle}>
-          <strong>Microsoft Artificial Intelligence Course: Azure AI Fundamentals</strong>
-          <div style={mutedStyle}>TESDA — 2026</div>
-        </div>
-        <div style={rowStyle}>
-          <strong>DataBix Conference 2024 (Data Science, Artificial Intelligence, and Business Analytics)</strong>
-          <div style={mutedStyle}>Batangas Information Technology Society — 2024</div>
+          <strong>TESDA Online Program (TOP) – Information and Communication Technology</strong>
+          <div style={mutedStyle}>June 2026</div>
+          <p>Microsoft Artificial Intelligence Course: Azure AI Fundamentals</p>
         </div>
       </>
     ),
@@ -171,6 +197,12 @@ const CONTENT = {
           </div>
         </div>
         <div style={rowStyle}>
+          <strong>Phone</strong>
+          <div style={mutedStyle}>
+            <a href="tel:+639152385608" style={linkStyle}>09152385608</a>
+          </div>
+        </div>
+        <div style={rowStyle}>
           <strong>LinkedIn</strong>
           <div style={mutedStyle}>
             <a
@@ -179,18 +211,6 @@ const CONTENT = {
             target="_blank"
             rel="noopener noreferrer">
               linkedin.com/in/nathaniel-lejano-a5a91a286
-            </a>
-          </div>
-        </div>
-        <div style={rowStyle}>
-          <strong>GitHub</strong>
-          <div style={mutedStyle}>
-            <a
-            href="https://github.com/nathnath95"
-            style={linkStyle}
-            target="_blank"
-            rel="noopener noreferrer">
-              github.com/nathnath95
             </a>
           </div>
         </div>
